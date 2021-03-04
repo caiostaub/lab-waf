@@ -1,0 +1,29 @@
+#! /bin/bash
+sudo setenforce 0
+sudo yum clean all
+sudo yum -y update
+sudo yum -y install httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo firewall-cmd --permanent --zone=public --add-service=http
+sudo firewall-cmd --permanent --zone=public --add-service=https
+sudo firewall-cmd --reload
+sudo -s 
+cat <<EOF > /var/www/html/index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GONube Tecnologia</title>
+</head>
+<body>
+    <center> <h1>Gonube Tecnologia - Testando OCI</h1> 
+            <h2>Instancia provisionada e Apache rodando com sucesso!!!! &#x270C; </h2>
+            <h3>Viva o Oracle Linux!!!! &#x270C; </h3>
+            <hr>
+            <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/JRTDae23UOnmHzCCTcJmmxie8OBzBDKs5JSExtf82Rg0TJG44c_Haq3TNuorUTuD/n/grtrwpdebm9u/b/BUCKET-TESTE-WEB/o/orlrobopenguin.bmp" alt="sucesso só com Oracle Linux">
+    </center>    
+</body>
+</html>
+EOF
