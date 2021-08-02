@@ -8,11 +8,11 @@ cat <<EOF > /var/www/html/index.html
     <title>GONube Tecnologia</title>
 </head>
 <body>
-    <center> <h1>Gonube Tecnologia - PRODUCAO AGORA !!!!</h1> 
+    <center> <h1>Gonube Tecnologia - AMBIENTE HOMOLOGACAO</h1> 
             <h2>Instancia provisionada e Apache rodando com sucesso!!!! &#x270C; </h2>
             <h3>Viva o Oracle Linux!!!! &#x270C; </h3>
             <hr>
-            <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/e28WG2oj7CDDKlHGiA4Op84o4dESPPorBE_zg2GutlZkQmsO_N1PRBigZWCUiwju/n/grtrwpdebm9u/b/BUCKET-TESTE-WEB/o/orl22ORL-Sup.png" alt="sucesso só com Oracle Linux">
+            <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/JRTDae23UOnmHzCCTcJmmxie8OBzBDKs5JSExtf82Rg0TJG44c_Haq3TNuorUTuD/n/grtrwpdebm9u/b/BUCKET-TESTE-WEB/o/orlrobopenguin.bmp" alt="sucesso só com Oracle Linux">
     </center>    
 </body>
 </html>
